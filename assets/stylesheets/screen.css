@@ -120,15 +120,21 @@ p, ul, ol, li, table, h1, h2, h3, h4, h5, h6, blockquote, img, iframe, embed, ob
   line-height: 1.4em; }
 
 /* line 62, modules/_basics.sass */
+footer {
+  font-size: 62%;
+  padding-top: 1.4em;
+  border-top: 1px solid #bbbbbb; }
+
+/* line 68, modules/_basics.sass */
 .spacer {
   margin-bottom: 0; }
 
 @media screen and (min-width: 800px) {
-  /* line 72, modules/_basics.sass */
+  /* line 78, modules/_basics.sass */
   .small-only {
     display: none; } }
 @media screen and (min-width: 1200px) {
-  /* line 72, modules/_basics.sass */
+  /* line 78, modules/_basics.sass */
   .small-only {
     display: none; } }
 
@@ -257,6 +263,10 @@ body {
 img {
   border: 2px dashed black; }
 
+/* line 97, modules/_gestalt.sass */
+footer {
+  border-top: 2px dashed black; }
+
 /* line 105, modules/_gestalt.sass */
 h1 {
   font-size: 1.45em; }
@@ -274,20 +284,40 @@ h3 {
   font-size: 1.1em; }
 
 /* line 118, modules/_gestalt.sass */
+a:link {
+  color: #941715; }
+/* line 120, modules/_gestalt.sass */
+a:visited {
+  color: #4a0c0f; }
+/* line 122, modules/_gestalt.sass */
+a:hover, a:active, a:active {
+  color: #3c8dde; }
+
+/* line 126, modules/_gestalt.sass */
+a.button:link {
+  color: white; }
+/* line 128, modules/_gestalt.sass */
+a.button:visited {
+  color: white; }
+/* line 130, modules/_gestalt.sass */
+a.button:hover, a.button:active, a.button:active {
+  color: white; }
+
+/* line 135, modules/_gestalt.sass */
 .wireframe {
   outline: 1px dotted red; }
 
-/* line 6, modules/_gestalt-responsive-images.sass */
+/* line 8, modules/_gestalt-responsive-images.sass */
 .card-fan {
   background-size: cover;
   background-image: url("/content/images/card-fan-small.jpg"); }
 
-/* line 6, modules/_gestalt-responsive-images.sass */
+/* line 8, modules/_gestalt-responsive-images.sass */
 .the-cards {
   background-size: cover;
   background-image: url("/content/images/the-cards-small.jpg"); }
 
-/* line 6, modules/_gestalt-responsive-images.sass */
+/* line 8, modules/_gestalt-responsive-images.sass */
 .many-packs {
   background-size: cover;
   background-image: url("/content/images/many-packs-small.jpg"); }
