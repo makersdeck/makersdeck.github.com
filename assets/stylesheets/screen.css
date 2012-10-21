@@ -164,9 +164,21 @@ footer {
 body {
   padding: 1em; }
 
-/* line 4, modules/_fluid.sass */
-img, div, p {
+/* line 5, modules/_fluid.sass */
+.chunk img, .chunk div, .chunk p, #stage img, #stage div, #stage p {
   width: 100%; }
+
+/* line 9, modules/_fluid.sass */
+#gallery img {
+  width: 49%; }
+  @media screen and (min-width: 800px) {
+    /* line 9, modules/_fluid.sass */
+    #gallery img {
+      width: 33%; } }
+  @media screen and (min-width: 1200px) {
+    /* line 9, modules/_fluid.sass */
+    #gallery img {
+      width: 24.6%; } }
 
 /* line 3, modules/_gestalt.sass */
 body {
@@ -232,15 +244,17 @@ body {
 /* line 64, modules/_gestalt.sass */
 .chunk {
   width: 100%;
+  overflow: hidden;
+  margin-top: 2em;
   margin-bottom: 1.4em;
   clear: both; }
   @media screen and (min-width: 800px) {
-    /* line 69, modules/_gestalt.sass */
+    /* line 71, modules/_gestalt.sass */
     .chunk .visual {
       width: 47%;
       float: left;
       margin-right: 5%; }
-    /* line 73, modules/_gestalt.sass */
+    /* line 75, modules/_gestalt.sass */
     .chunk .text {
       width: 47%;
       float: left;
@@ -253,7 +267,7 @@ body {
       clear: none;
       margin-right: 5%; }
       /* line 84, modules/_gestalt.sass */
-      .chunk:last-child {
+      .chunk:nth-child(3) {
         margin-right: 0; }
       /* line 86, modules/_gestalt.sass */
       .chunk .visual, .chunk .text {
@@ -263,47 +277,47 @@ body {
 img {
   border: 2px dashed black; }
 
-/* line 97, modules/_gestalt.sass */
-footer {
+/* line 100, modules/_gestalt.sass */
+.hasTopline {
   border-top: 2px dashed black; }
 
-/* line 105, modules/_gestalt.sass */
+/* line 108, modules/_gestalt.sass */
 h1 {
   font-size: 1.45em; }
   @media screen and (min-width: 700px) {
-    /* line 105, modules/_gestalt.sass */
+    /* line 108, modules/_gestalt.sass */
     h1 {
       font-size: 2.3em; } }
 
-/* line 109, modules/_gestalt.sass */
+/* line 112, modules/_gestalt.sass */
 h2 {
   font-size: 1.25em; }
 
-/* line 111, modules/_gestalt.sass */
+/* line 114, modules/_gestalt.sass */
 h3 {
   font-size: 1.1em; }
 
-/* line 118, modules/_gestalt.sass */
+/* line 121, modules/_gestalt.sass */
 a:link {
   color: #941715; }
-/* line 120, modules/_gestalt.sass */
+/* line 123, modules/_gestalt.sass */
 a:visited {
   color: #4a0c0f; }
-/* line 122, modules/_gestalt.sass */
+/* line 125, modules/_gestalt.sass */
 a:hover, a:active, a:active {
   color: #3c8dde; }
 
-/* line 126, modules/_gestalt.sass */
+/* line 129, modules/_gestalt.sass */
 a.button:link {
   color: white; }
-/* line 128, modules/_gestalt.sass */
+/* line 131, modules/_gestalt.sass */
 a.button:visited {
   color: white; }
-/* line 130, modules/_gestalt.sass */
+/* line 133, modules/_gestalt.sass */
 a.button:hover, a.button:active, a.button:active {
   color: white; }
 
-/* line 135, modules/_gestalt.sass */
+/* line 138, modules/_gestalt.sass */
 .wireframe {
   outline: 1px dotted red; }
 
